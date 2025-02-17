@@ -46,8 +46,21 @@ fun consultasinteresantes(digimons: List<Digimon>) {
     }
 
     println("----------------------")
-    val letra = "A"
-    val digimonsConLetra = digimons.count { it.name.startsWith(letra, ignoreCase = true) }
-    println("Hay $digimonsConLetra digimons que empiezan con la letra $letra")
+
+    val letra1 = "A"
+    val digimonsConLetra1 = digimons.count { it.name.startsWith(letra1, ignoreCase = true) }
+    println("Hay $digimonsConLetra1 digimons que empiezan con la letra $letra1")
+
+    println("----------------------")
+
+    println("Introduce la letra con la que empieza el digimon : ")
+    val letra2 = readln()
+    val digimonsConLetra2 = digimons.count { it.name.startsWith(letra2, ignoreCase = true) }
+    println("Hay $digimonsConLetra2 digimons que empiezan con la letra $letra2")
+
+    println("----------------------")
+
+    val randomdigimon = digimons.random()
+    println("¡Foto de un Digimon aleatorio! ${randomdigimon.img}")
 
 }
