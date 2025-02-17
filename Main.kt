@@ -45,6 +45,9 @@ fun consultasinteresantes(digimons: List<Digimon>) {
         println("Hay $cantidad digimons de nivel $nivel")
     }
 
-
+    println("----------------------")
+    val letra = "A"
+    val digimonsConLetra = digimons.count { it.name.startsWith(letra, ignoreCase = true) }
+    println("Hay $digimonsConLetra digimons que empiezan con la letra $letra")
 
 }
